@@ -427,7 +427,8 @@ class AvlTree<AnyType extends Comparable<? super AnyType>> {
 		public int hitungNode() {
 		    return hitungNode(root);
 		}
-		
+
+        //Method cek sudah balace atau belum
 		private boolean isBalanced(AvlNode<AnyType> t) {
 		    if (t == null) {
 		        return true;
@@ -442,6 +443,7 @@ class AvlTree<AnyType extends Comparable<? super AnyType>> {
 		    return isBalanced(root);
 		}
 		
+        //method hitung tinggi pohon
 		public int getTreeHeight() {
 		    return height(root);
 		}
